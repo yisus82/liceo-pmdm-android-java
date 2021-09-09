@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valores_array">
+        <item>Selecciona una opción:</item>
+        <item>Valor1</item>
+        <item>Valor2</item>
+        <item>Valor3</item>
+        <item>Valor4</item>
+        <item>Valor5</item>
+    </string-array>
+</resources>
