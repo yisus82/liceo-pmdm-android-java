@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BtnBotonSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LblMensaje"
+        android:text="@string/click" />
+
+    <Button
+        android:id="@+id/BtnBotonMasImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnBotonSimple"
+        android:drawableLeft="@drawable/ic_estrella"
+        android:drawablePadding="5dp"
+        android:text="@string/click" />
+
+    <ImageButton
+        android:id="@+id/BtnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnSwitch"
+        android:contentDescription="@string/icono_estrella"
+        android:src="@drawable/ic_estrella" />
+
+    <LinearLayout
+        android:id="@+id/BarraBtnSinBorde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnPersonalizado"
+        android:divider="?android:dividerVertical"
+        android:dividerPadding="6dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <ImageButton
+            android:id="@+id/BtnSinBorde"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/icono_estrella"
+            android:src="@drawable/ic_estrella" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/texto_de_prueba" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnAceptar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aceptar" />
+
+        <Button
+            android:id="@+id/BtnCancelar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancelar" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/BtnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnToggle"
+        android:switchPadding="10dp"
+        android:text="@string/seleccion" />
+
+    <TextView
+        android:id="@+id/LblMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ToggleButton
+        android:id="@+id/BtnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnBotonMasImagen"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <ToggleButton
+        android:id="@+id/BtnPersonalizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnImagen"
+        android:background="@drawable/toggle_style"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+</RelativeLayout>
