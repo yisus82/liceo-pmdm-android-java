@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">05 - CheckRadio</string>
+    <string name="marcame">Márcame</string>
+    <string name="id_opcion_seleccionada">ID opción seleccionada: (ninguna)</string>
+    <string name="opcion_1">Opción 1</string>
+    <string name="opcion_2">Opción 2</string>
+</resources>
