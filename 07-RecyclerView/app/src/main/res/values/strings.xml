@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">07 - RecyclerView</string>
+    <string name="insertar">Insertar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="mover">Mover</string>
+</resources>
