@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">17 - BBDD 2</string>
+    <string name="val">N:</string>
+    <string name="nreg">C:</string>
+    <string name="ins">Ins</string>
+    <string name="act">Act</string>
+    <string name="elim">Elim</string>
+</resources>
