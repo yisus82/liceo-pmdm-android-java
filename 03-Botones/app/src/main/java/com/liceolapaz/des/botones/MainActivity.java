@@ -3,6 +3,7 @@ package com.liceolapaz.des.botones;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -61,13 +62,14 @@ public class MainActivity extends AppCompatActivity {
 
         btnSwitch = (Switch) findViewById(R.id.BtnSwitch);
 
-        btnSwitch.setOnClickListener(new View.OnClickListener() {
+        btnSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                if (btnSwitch.isChecked())
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
                     lblMensaje.setText("Botón Switch: ON");
-                else
+                } else {
                     lblMensaje.setText("Botón Switch: OFF");
+                }
             }
         });
 
