@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         //Estalecer propiedades de la etiqueta de texto por código:
         lblEtiqueta = findViewById(R.id.lblEtiqueta);
         String texto = lblEtiqueta.getText().toString();
-        lblEtiqueta.setText("$texto (modificado)");
+        lblEtiqueta.setText(texto + " (modificado)");
         lblEtiqueta.setBackgroundColor(Color.RED);
 
         //Establecer propiedades del cuadro de texto por código:
