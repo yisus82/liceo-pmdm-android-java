@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 //txtBasico.setText(nuevoTexto);
 
                 //Asigna texto con formato HTML
-                //txtBasico.setText(Html.fromHtml(nuevoTexto),BufferType.SPANNABLE);
+                //txtBasico.setText(Html.fromHtml(nuevoTexto), TextView.BufferType.SPANNABLE);
 
                 //Obtiene el texto SIN etiquetas de formato HTML
                 //String aux1 = txtBasico.getText().toString();
